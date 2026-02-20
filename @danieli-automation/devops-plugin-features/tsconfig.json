@@ -8,7 +8,10 @@
     "noImplicitAny": false,
     "baseUrl": ".",
     "paths": {
-      "core/*": ["src/core/*"]
+      "features/*": ["src/features/*"],
+      "core/*": ["src/core/*"],
+      "app/*": ["src/app/*"],
+      "src/*": ["src/*"]
     }
   },
   "include": ["src"],

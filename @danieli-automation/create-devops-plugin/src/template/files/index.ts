@@ -14,7 +14,6 @@ import { vitestConfigFile } from "./vitestConfig.js";
 import { webpackAppConfigFile } from "./webpackAppConfig.js";
 import { webpackCommonConfigFile } from "./webpackCommonConfig.js";
 import { webpackConfigFile } from "./webpackConfig.js";
-import { webpackExtensionsConfigFile } from "./webpackExtensionsConfig.js";
 
 type Props = {
   context: TemplateContext;
@@ -36,7 +35,6 @@ export function createTemplateFiles({ context, manifest, devManifest }: Props): 
     webpackConfigFile(),
     webpackCommonConfigFile(),
     webpackAppConfigFile(),
-    webpackExtensionsConfigFile(),
     vitestConfigFile(),
     appTsxFile(context),
     appHtmlFile(context),

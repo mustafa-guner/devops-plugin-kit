@@ -1,0 +1,1 @@
+export type KVStore<T> = { load(): Promise<T | undefined>; save(value: T): Promise<void>; };

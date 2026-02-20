@@ -24,7 +24,6 @@ export function readmeFile(context: TemplateContext): [string, string] {
 - \`webpack.config.cjs\`: webpack entry point
 - \`config/webpack/common.cjs\`: shared webpack rules and plugins
 - \`config/webpack/app.cjs\`: app bundle configuration
-- \`config/webpack/extensions.cjs\`: extensions bundle configuration
 - \`vitest.config.ts\`: test and coverage setup
 `
   ];

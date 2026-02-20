@@ -1,0 +1,1 @@
+export type WorkItemOrderType = { id: number; order: number };
