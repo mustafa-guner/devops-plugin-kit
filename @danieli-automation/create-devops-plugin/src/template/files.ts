@@ -1,0 +1,1 @@
+export { createTemplateFiles } from "./files/index.js";

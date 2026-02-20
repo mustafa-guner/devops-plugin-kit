@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "jsx": "react-jsx",
+    "moduleResolution": "Node",
+    "strict": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "core/*": [
+        "src/core/*"
+      ],
+      "app/*": [
+        "src/app/*"
+      ]
+    }
+  },
+  "include": [
+    "src",
+    "vitest.config.ts"
+  ]
+}

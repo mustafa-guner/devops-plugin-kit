@@ -1,0 +1,22 @@
+/**
+ * Generates the base stylesheet template entry.
+ */
+export function appStylesFile(): [string, string] {
+  return [
+    "src/app/styles.css",
+    `:root {
+  font-family: Segoe UI, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f6f8;
+  color: #1f2328;
+}
+
+.app {
+  padding: 24px;
+}
+`
+  ];
+}

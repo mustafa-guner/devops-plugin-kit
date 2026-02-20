@@ -1,0 +1,27 @@
+{
+  "name": "@danieli-automation/devops-plugin-state",
+  "version": "0.1.0",
+  "description": "Shared Zustand stores and helpers for Azure DevOps plugins",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "Remove-Item -Recurse -Force dist -ErrorAction SilentlyContinue",
+    "lint": "echo lint not configured",
+    "test": "echo test not configured"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

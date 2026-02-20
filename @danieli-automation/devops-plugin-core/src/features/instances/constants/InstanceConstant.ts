@@ -1,0 +1,5 @@
+export default {
+    OWNERS_FIELD_MAX_LEN: 5,
+    TITLE_FIELD_MAX_LEN: 100,
+    DESCRIPTION_FIELD_MAX_LEN: 300,
+}

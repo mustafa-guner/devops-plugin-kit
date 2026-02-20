@@ -1,0 +1,38 @@
+{
+  "manifestVersion": 1,
+  "id": "smokepluginstatic3",
+  "publisher": "local-test",
+  "version": "0.0.1",
+  "name": "SmokePluginStatic3",
+  "description": "SmokePluginStatic3 Azure DevOps extension",
+  "public": false,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "categories": [
+    "Code"
+  ],
+  "files": [
+    {
+      "path": "dist",
+      "addressable": true
+    }
+  ],
+  "contributions": [
+    {
+      "id": "smokepluginstatic3-hub",
+      "type": "ms.vss-web.hub",
+      "description": "SmokePluginStatic3 hub",
+      "targets": [
+        "ms.vss-code-web.code-hub-group"
+      ],
+      "properties": {
+        "name": "SmokePluginStatic3",
+        "uri": "dist/index.html"
+      }
+    }
+  ],
+  "baseUri": "https://localhost:3000"
+}

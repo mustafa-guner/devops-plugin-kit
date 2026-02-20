@@ -1,0 +1,27 @@
+{
+  "name": "@danieli-automation/create-devops-plugin",
+  "version": "0.1.0",
+  "description": "Scaffold Azure DevOps plugin template and manifest files",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node -e \"require('node:fs').cpSync('src/template/static','dist/template/static',{recursive:true,force:true})\"",
+    "clean": "Remove-Item -Recurse -Force dist -ErrorAction SilentlyContinue",
+    "lint": "echo lint not configured",
+    "test": "echo test not configured"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

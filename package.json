@@ -1,0 +1,26 @@
+{
+  "name": "devops-plugin-kit",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Shared toolkit for Azure DevOps plugins",
+  "author": "Danieli Automation",
+  "license": "MIT",
+  "type": "module",
+  "workspaces": [
+    "@danieli-automation/*"
+  ],
+  "scripts": {
+    "build": "npm run -ws build",
+    "clean": "npm run -ws clean",
+    "lint": "npm run -ws lint",
+    "test": "npm run -ws test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "azure-devops-extension-api": "^4.251.0",
+    "azure-devops-extension-sdk": "^4.0.2",
+    "zustand": "4.5.7",
+    "react-query": "^3.39.3"
+  }
+}
