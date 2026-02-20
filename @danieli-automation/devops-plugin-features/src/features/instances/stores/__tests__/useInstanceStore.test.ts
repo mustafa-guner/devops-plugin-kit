@@ -1,25 +1,25 @@
 import { describe, expect, it } from "vitest";
-import { useIterationStore } from "../../../iterations/stores/useIterationStore.js";
+import { useInstanceStore } from "../useInstanceStore";
 
-describe("useIterationStore", () => {
+describe("useInstanceStore", () => {
     //#region currentInstance
     it("currentInstance: has correct initial state", () => {
-        expect(useIterationStore.getState().currentIteration).toEqual(null);
+        expect(useInstanceStore.getState().currentInstance).toEqual(null);
     });
 
     it("setCurrentInstance: sets instance as current iteration.", () => {
-        const iteration = {
+        const instance = {
             id: "1",
-            name: "Iteration Name",
-            path: "Iteration Path",
-            startDate: "2025-01-01",
-            finishDate: "2025-01-15",
-            projectId: "project-id-1",
-            teamId: "team-id-1",
-            paths: ["Path A", "Path B", "Path C"]
-        }
-        useIterationStore.getState().setCurrentIteration(iteration);
-        expect(useIterationStore.getState().currentIteration).toEqual(iteration);
+            name: "Instance Name",
+            org: "demo-org",
+            createdBy: { id: "u1" },
+            owners: [],
+            projectTeamPairs: [],
+            createdAt: "2025-01-01T00:00:00.000Z",
+            updatedAt: "2025-01-01T00:00:00.000Z"
+        };
+        useInstanceStore.getState().setCurrentInstance(instance);
+        expect(useInstanceStore.getState().currentInstance).toEqual(instance);
     });
     //#endregion
 });

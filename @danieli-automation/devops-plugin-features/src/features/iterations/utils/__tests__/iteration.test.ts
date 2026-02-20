@@ -1,4 +1,4 @@
-import { IterationInfoType } from "features/iterations/types/IterationInfoType";
+import type { IterationInfoType } from "features/iterations/types/IterationInfoType";
 import { describe, expect, it } from "vitest";
 import { formatIteration } from "../iteration.js";
 
