@@ -1,0 +1,38 @@
+{
+  "manifestVersion": 1,
+  "id": "smokecli",
+  "publisher": "danieli-automation",
+  "version": "0.0.1",
+  "name": "SmokeCli",
+  "description": "SmokeCli Azure DevOps extension",
+  "public": false,
+  "targets": [
+    {
+      "id": "Microsoft.VisualStudio.Services"
+    }
+  ],
+  "categories": [
+    "Code"
+  ],
+  "files": [
+    {
+      "path": "dist",
+      "addressable": true
+    }
+  ],
+  "contributions": [
+    {
+      "id": "smokecli-hub",
+      "type": "ms.vss-web.hub",
+      "description": "SmokeCli hub",
+      "targets": [
+        "ms.vss-code-web.code-hub-group"
+      ],
+      "properties": {
+        "name": "SmokeCli",
+        "uri": "dist/index.html"
+      }
+    }
+  ],
+  "baseUri": "https://localhost:3000"
+}
