@@ -4,7 +4,7 @@ import { formatIteration } from "../iteration.js";
 
 describe("Utils: Iteration Helper Tests: ", () => {
 
-    //#endregion formatIteration
+    //#region formatIteration
     it("formatIteration: returns formatted iteration in specified format if there is any provided iteration", () => {
 
         const iteration: IterationInfoType = {
